@@ -110,8 +110,9 @@
     <div class="pages-path">
         <div class="container">
             <div class="pages-path__inner">
-                <a href="./index.html" class="pages__home"><img src="assets/img/home-path.svg" alt="home"></a>
-                <img src="assets/img/arr-path.svg" alt="arr" class="pages__path">
+                <a href="./index.html" class="pages__home"><img src="assets/img/catalog-page/home-path.svg"
+                        alt="home"></a>
+                <img src="assets/img/catalog-page/arr-path.svg" alt="arr" class="pages__path">
                 <p class="pages__this-page">Каталог</p>
             </div>
         </div>
@@ -129,11 +130,711 @@
         </div>
     </div>
 
-    
+    <div class="catalog__block">
+        <div class="container">
+            <div class="catalog__block-inner">
+                <div class="catalog__block-left">
+                    <h4 class="catalog__block-title">Столы</h4>
+                    <div class="catalog__block-delete">
+                        <div class="block__delete-all">
+                            <p>Очистить весь фильтр</p>
+                            <button><img src="assets/img/catalog-page/trash.svg" alt="trash"></button>
+                        </div>
+                        <div class="block__delete-item">
+                            <p>Размер: 100x160</p>
+                            <button><img src="assets/img/catalog-page/catalog-delete.svg" alt="delete"></button>
+                        </div>
+                        <div class="block__delete-item">
+                            <p>Размер: 100x80</p>
+                            <button><img src="assets/img/catalog-page/catalog-delete.svg" alt="delete"></button>
+                        </div>
+                        <div class="block__delete-item">
+                            <p>Тип: Круглый</p>
+                            <button><img src="assets/img/catalog-page/catalog-delete.svg" alt="delete"></button>
+                        </div>
+                        <div class="block__delete-item">
+                            <p>Производитель: Турция</p>
+                            <button><img src="assets/img/catalog-page/catalog-delete.svg" alt="delete"></button>
+                        </div>
+                    </div>
+
+                    <div class="catalog__block-price">
+                        <div class="catalog__block-info">
+                            <button class="block-info__left">
+                                <p>Цена</p>
+                                <img src="assets/img/catalog-page/catalog-icon2.svg" alt="">
+                            </button>
+                            <button class="price-reset">
+                                <img src="assets/img/catalog-page/rotate.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>от</span>
+                                <input type="number" class="input-min" placeholder="0 ₽">
+                            </div>
+                            <div class="field">
+                                <span>до</span>
+                                <input type="number" class="input-max" placeholder="80 000 ₽">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__block-size">
+                        <div class="catalog__block-info">
+                            <button class="block-info__left">
+                                <p>Размер</p>
+                                <img src="assets/img/catalog-page/catalog-icon2.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="catalog__filter">
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="1"
+                                    id="checking1"><label class="checkbox-size" for="checking1">100х100</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="2"
+                                    id="checking2"><label class="checkbox-size" for="checking2">100х160</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="3"
+                                    id="checking3"><label class="checkbox-size" for="checking3">100х80</label>
+                            </div>
+                        </div>
+                        <div class="catalog__filter">
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="4"
+                                    id="checking4"><label class="checkbox-size" for="checking4">100х100</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="5"
+                                    id="checking5"><label class="checkbox-size" for="checking5">100х160</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="5"
+                                    id="checking6"><label class="checkbox-size" for="checking6">100х80</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__block-size">
+                        <div class="catalog__block-info">
+                            <button class="block-info__left">
+                                <p>Тип</p>
+                                <img src="assets/img/catalog-page/catalog-icon2.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="catalog__filter">
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="1"
+                                    id="type1"><label class="checkbox-type" for="type1">Круглый</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="2"
+                                    id="type2"><label class="checkbox-type" for="type2">Овальный</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="3"
+                                    id="type3"><label class="checkbox-type" for="type3">Квадрат</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__block-size">
+                        <div class="catalog__block-info">
+                            <button class="block-info__left">
+                                <p>Производитель</p>
+                                <img src="assets/img/catalog-page/catalog-icon2.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="catalog__filter">
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="1"
+                                    id="brand1"><label class="checkbox-brand" for="brand1">Турция</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="2"
+                                    id="brand2"><label class="checkbox-brand" for="brand2">Россия</label>
+                            </div>
+                            <div class="checkbox-item"><input class="checking" type="checkbox" name="" value="3"
+                                    id="brand3"><label class="checkbox-brand" for="brand3">Дания</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== -->
+
+                <div class="catalog__block-right">
+                    <button class="block-right__price">
+                        <p>По возрастанию цены</p>
+                        <img src="assets/img/catalog-page/catalog-icon.svg" alt="">
+                    </button>
+                    <ul class="catalog__block-items">
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product3.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product2.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product1.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <ul class="catalog__block-items">
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product3.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product2.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product1.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+
+                    <ul class="catalog__block-items">
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product3.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product2.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__block-catalog">
+                            <div class="search__block-pic">
+                                <div class="search-details">
+                                    <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                    <p class="details-item details-discount">-35%</p>
+                                    <p class="details-item details-new">New</p>
+                                    <p class="details-item details-top">Top</p>
+                                    <button class="details-favorite search-favorite" tabindex="0"><svg
+                                            class="details-img" width="18" height="18" viewBox="0 0 30 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                                stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <img src="assets/img/product1.jpg" alt="img" class="reviews__block-img">
+                            </div>
+                            <div class="products__block-search">
+                                <p class="products__product">Стол Версаче Квардарт 67</p>
+                                <p class="products__text">Круглый стол на одной ножке с раздвижным механизмом
+                                    смотрится шикарно
+                                    и
+                                    изысканно в любом...</p>
+                                <div class="products__price">
+                                    <div class="products__discount">
+                                        <p class="price">15 000 ₽</p>
+                                        <p class="new-price">10 000 ₽</p>
+                                    </div>
+                                    <div class="products__cart">
+                                        <button href="" class="cart block-cart" tabindex="0">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p>В корзину</p>
+                                        </button>
+
+                                        <!-- После нажатия *в корзину* -->
+                                        <button href="" class="cart block-cart checked-cart" tabindex="0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="#2E9E1C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <p>В корзине</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-    <script src="assets/js/jquery-3.6.0.min.js?_v=20220704212243"></script>
+    <script src=" assets/js/jquery-3.6.0.min.js?_v=20220704212243">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?_v=20220704212243"
         type="text/javascript"></script>
     <script src="assets/js/slick.min.js?_v=20220704212243"></script>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Montserrat:wght@500;600&display=swap&_v=20220704212243"
+        rel="stylesheet">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel=" stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup__container">
+            <div class="popup__inner">
+                <a href="##" class="popup__close close-popup"><svg class="close" width="37" height="37"
+                        viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.75 9.25L9.25 27.75" stroke="#5F5F5F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.25 9.25L27.75 27.75" stroke="#5F5F5F" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <p class="popup__text">Заказать консультацию</p>
+                <form method="get" class="popup__form">
+                    <input type="text" placeholder="Ваше имя" name="name" id="name" class="form__name" required>
+                    <input id="phone" type="tel" placeholder="8 (_ _ _) - _ _ _ - _ _ - _ _" name="phone" id="phone"
+                        class="form__phone" required>
+                    <input type="submit" class="form__submit" value="Заказать звонок">
+                    <div class="form__offert">
+                        <input id="form__check" class="form__check" type="checkbox" name="terms" value="1">
+                        <label for="form__check" class="form__check-label"></label>
+                        <p class="form__text">Нажимая на кнопку вы соглашаетесь с условиями <a href="#">публичной
+                                оферты</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header id="header" class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__content">
+                    <nav class="header__nav">
+                        <a href="#" class="menu__link">О компании</a>
+                        <a href="#" class="menu__link">Контакты</a>
+                        <a href="#" class="menu__link">Партнеры</a>
+                        <a href="#" class="menu__link">Гарантия</a>
+                        <a href="#" class="menu__link">Обмен и возврат</a>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="mailto:stolehnica@mail.ru" class="header__mail">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z"
+                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 6.5L12 13.5L2 6.5" stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p>stolehnica@mail.ru</p>
+                        </a>
+                        <a href="https://wa.me/79200000000" class="header__wp">
+                            <p>WhatsApp</p><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6416 14C16.4416 13.9 15.1416 13.3 14.9416 13.2C14.7416 13.1 14.5416 13.1 14.3416 13.3C14.1416 13.5 13.7416 14.1 13.5416 14.3C13.4416 14.5 13.2416 14.5 13.0416 14.4C12.3416 14.1 11.6416 13.7 11.0416 13.2C10.5416 12.7 10.0416 12.1 9.64163 11.5C9.54163 11.3 9.64163 11.1 9.74163 11C9.84163 10.9 9.94163 10.7 10.1416 10.6C10.2416 10.5 10.3416 10.3 10.3416 10.2C10.4416 10.1 10.4416 9.90001 10.3416 9.80001C10.2416 9.70001 9.74163 8.50001 9.54163 8.00001C9.44163 7.30001 9.24163 7.30001 9.04163 7.30001C8.94163 7.30001 8.74163 7.30001 8.54163 7.30001C8.34163 7.30001 8.04163 7.50001 7.94163 7.60001C7.34163 8.20001 7.04163 8.90001 7.04163 9.70001C7.14163 10.6 7.44163 11.5 8.04163 12.3C9.14163 13.9 10.5416 15.2 12.2416 16C12.7416 16.2 13.1416 16.4 13.6416 16.5C14.1416 16.7 14.6416 16.7 15.2416 16.6C15.9416 16.5 16.5416 16 16.9416 15.4C17.1416 15 17.1416 14.6 17.0416 14.2C17.0416 14.2 16.8416 14.1 16.6416 14ZM19.1416 4.90001C15.2416 1.00001 8.94163 1.00001 5.04163 4.90001C1.84163 8.10001 1.24163 13 3.44163 16.9L2.04163 22L7.34163 20.6C8.84163 21.4 10.4416 21.8 12.0416 21.8C17.5416 21.8 21.9416 17.4 21.9416 11.9C22.0416 9.30001 20.9416 6.80001 19.1416 4.90001ZM16.4416 18.9C15.1416 19.7 13.6416 20.2 12.0416 20.2C10.5416 20.2 9.14163 19.8 7.84163 19.1L7.54163 18.9L4.44163 19.7L5.24163 16.7L5.04163 16.4C2.64163 12.4 3.84163 7.40001 7.74163 4.90001C11.6416 2.40001 16.6416 3.70001 19.0416 7.50001C21.4416 11.4 20.3416 16.5 16.4416 18.9Z"
+                                    fill="#EB6345" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__searching">
+                <div class="header__logo">
+                    <a href="#" class="logo__link"><img src="assets/img/logo.svg" alt="Stolechnica"></a>
+                </div>
+                <form action="" method="get" class="search">
+                    <input class="search-input" name="s" placeholder="Поиск..." type="search">
+                    <button class="search-btn" type="submit"><img src="assets/img/search.svg" alt=""></button>
+                </form>
+                <div class="header__popup">
+                    <a href="#popup" class="popup-check popup-link">Заказать звонок</a>
+                </div>
+            </div>
+
+            <div class="header__catalog">
+                <div class="catalog">
+                    <a href="#" class="catalog__item mobile-nav ">
+                        <sopan type="button" class="mobile-nav-button">
+                            <span class="mobile-nav-button__icon"></span>
+                        </sopan>
+                        <p href="" class="catalog__link">Каталог</p>
+                    </a>
+                    <a href="#products" class="catalog__item">Распродажа</a>
+                    <a href="#products" class="catalog__item">Популярное</a>
+                    <a href="#products" class="catalog__item">Новинка</a>
+                </div>
+                <div class="catalog__cart">
+                    <a href="" class="favorite">
+                        <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                stroke="#EB6345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Избранное</p>
+                    </a>
+                    <a href="" class="cart">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                stroke="#EB6345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                stroke="#EB6345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Корзина</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="refund">
+        <div class="container">
+            <h3 class="refund__title">Обмен и возврат</h3>
+            <div class="refund__checking">
+                <div class="refund__checking-inner">
+                    <h5 class="refund__checking-title">Непосредственно при доставке Вам необходимо проверить:
+                    </h5>
+                    <p class="refund__checking-text">- Внешний вид товара. </p>
+                    <p class="refund__checking-text">- Комплектность. </p>
+                    <p class="refund__checking-text">- Правильность оформления гарантийных документов и накладных.</p>
+                    <p class="refund__checking-text">- Отсутствие механических повреждений на изделии. </p>
+                    <p class="refund__checking-text">После этого необходимо оплатить заказ курьеру (в случае, если вы не
+                        сделали этого банковским переводом) и расписаться в накладной о получении.</p>
+                    <p class="refund__checking-text">Вместе с доставленным заказом вы получите кассовый чек и товарную
+                        накладную, которые будут необходимы вам в случае наступления гарантийного случая. </p>
+                    <p class="refund__checking-text">Все что необходимо при наступлении гарантийного случая позвонить
+                        нам по телефону и сообщить о возникшей проблеме, а также дополнительно сообщить нам номер заказа
+                        и фамилию заказчика.</p>
+                </div>
+            </div>
+            <div class="refund__ways">
+                <h3 class="refund__ways-title">Способ возврата приобретаемого товара</h3>
+                <div class="refund__ways-inner">
+                    <p class="refund__ways-text">- Покупатель вправе отказаться от заказанного товара в любое время до
+                        его получения, а после получения товара – в течение 7 (семи) календарных дней с даты получения
+                        товара, при условии, если сохранены его товарный вид, потребительские свойства, а также
+                        документ, подтверждающий факт и условия покупки указанного товара.</p>
+                    <p class="refund__ways-text">- При этом Покупатель обязан вернуть товар в пункт выдачи товара
+                        Продавца за свой счет.</p>
+                    <p class="refund__ways-text">- Продавец возвращает Покупателю стоимость оплаченного товара, за
+                        вычетом стоимости доставки товара, в течение десяти дней со дня предъявления Покупателем
+                        соответствующего требования.</p>
+
+                    <p class="refund__ways-text">- Согласно п. 1 ст. 25 Закона РФ «Защите прав потребителей» от
+                        07.02.1992 № 2300-1 (http://www.consultant.ru/) невозможен возврат товара, бывшего в
+                        употреблении. При отказе Покупателя от заказанного Товара Продавец удерживает из суммы,
+                        уплаченной Покупателем за Товар в соответствии с договором, расходы Продавца на доставку от
+                        Покупателя возвращённого товара</p>
+                    <p class="refund__ways-text">- Покупатель не вправе возвратить товары надлежащего качества,
+                        указанные в Перечне непродовольственных товаров надлежащего качества, не подлежащих возврату или
+                        обмену, утвержденном Постановлением Правительства РФ от 19.01.1998 № 55.</p>
+                    <p class="refund__ways-text">- Обмен и возврат товара производится на основании Заявления,
+                        заполненного и подписанного Покупателем.</p>
+
+                    <p class="refund__ways-text">При возврате Покупателем товара надлежащего качества составляются
+                        накладная или акт о возврате товара, в котором указываются: полное фирменное наименование
+                        (наименование) Продавца;</p>
+                    <p class="refund__ways-text">- фамилия, имя, отчество Покупателя;</p>
+                    <p class="refund__ways-text">- наименование товара;</p>
+                    <p class="refund__ways-text">- даты заключения договора и передачи товара;</p>
+                    <p class="refund__ways-text">- сумма, подлежащая возврату;</p>
+                    <p class="refund__ways-text">- подписи продавца и покупателя.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="consultation">
+        <div class="container">
+            <div class="consultation__inner">
+                <div class="consultation__info">
+                    <h3 class="consultation__title">Бесплатная консультация</h3>
+                    <p class="consultation__text">Свяжитесь с нами и мы поможем с выбором. Или оставьте свой номер
+                        телефона, наш консультант свяжется с вами.</p>
+                    <div class="consultation__bottoms">
+                        <button href="#popup" class="consultation-popup popup-link">Заказать звонок</button>
+                        <a href="https://wa.me/79200000000" class="wp">Написать в WhatsApp</a>
+                    </div>
+                </div>
+                <div class="consultation__pic">
+                    <img src="assets/img/consultation-pic.png" alt="" class="consultation-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__options">
+                    <a href="#" class="footer-logo"><img src="assets/img/logo.svg" alt="logo"></a>
+                    <p class="footer__law">2022© Stolechnica.ru Все права защищены</p>
+                    <a href="#" class="privacy">Политика конфедециальности</a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__about">
+                        <div class="footer__block">
+                            <h4 class="footer__title">Каталог</h4>
+                            <ul class="footer__items">
+                                <li class="footer__item"><a href="#" class="footer__link">Стулья</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Столы</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Кровати</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Диваны</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Шкафы</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Прихожие</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Тумбы</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Пуфики</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h4 class="footer__title">Информация</h4>
+                            <ul class="footer__items">
+                                <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Партнеры</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Гарантия</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Обмен и возврат</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="mailto:stolehnica@mail.ru" class="footer__mail">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z"
+                                    stroke="#EB6345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 6.5L12 13.5L2 6.5" stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p>stolehnica@mail.ru</p>
+                        </a>
+                        <a href="tel:+78003502136" class="footer__phone">8 (800)-350-21-36</a>
+                        <button href="#popup" class="consultation-popup footer-popup popup-link">Заказать
+                            звонок</button>
+                        <a href="https://wa.me/79200000000" class="wp footer-wp">Написать в WhatsApp</a>
+                        <div class="catalog__cart">
+                            <a href="" class="favorite">
+                                <svg width="30" height="26" viewBox="0 0 30 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                        stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Избранное</p>
+                            </a>
+                            <a href="" class="cart">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                        stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.75 7.5H26.25" stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                        stroke="#EB6345" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Корзина</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js?_v=20220704212243"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?_v=20220704212243"
+        type="text/javascript"></script>
+    <script src="assets/js/slick.min.js?_v=20220704212243"></script>
+    <script src="assets/js/app.min.js?_v=20220704212243"></script>
+</body>
+
+</html>
