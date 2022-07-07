@@ -44,6 +44,7 @@ body {
   margin: 0 auto;
 }
 
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -125,11 +126,66 @@ body {
   color: #EB6345;
 }
 
+
+
+/* ============================= */
+/* ============Поиск============= */
+/* ============================= */
+
 .header__searching {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
+}
+
+.modal-ajax-search{
+  display: none;
+}
+
+.ajax-search__found{
+  margin-bottom: 120px;
+}
+
+.ajax-search + .ajax-search{
+  margin-top: 30px;
+}
+
+.ajax-search__undefined,
+.ajax-search__text{
+  color: #141414;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+}
+
+.ajax-search__text{
+  margin-bottom: 50px;
+}
+
+.ajax-search__undefined{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.ajax-search__undefined span,
+.ajax-search__text span {
+  color: #EB6345;
+}
+
+.ajax-search__details{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #141414;
+}
+
+.ajax-search{
+  display: flex;
+  justify-content: space-between;
 }
 
 .search {
@@ -166,6 +222,11 @@ body {
   cursor: pointer;
 }
 
+/* ============================= */
+/* ========================= */
+/* ============================= */
+
+
 .popup-check {
   font-family: "Manrope";
   background: #141414;
@@ -188,6 +249,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__catalog-path{
+  margin-bottom: 30px;
 }
 
 .catalog__item + .catalog__item {
@@ -625,6 +690,14 @@ body {
   max-width: 407px;
   transition: all 0.3s;
   opacity: 0;
+
+}
+
+.product__block-search{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  max-width: 297px;
+  transition: all 0.3s;
 }
 
 .product__block:hover {
@@ -633,6 +706,10 @@ body {
 
 .products__block-content {
   padding: 25px 44px 44px 44px;
+}
+
+.products__block-search{
+  padding: 25px 28px 44px 28px;
 }
 
 .products__product {
@@ -828,6 +905,13 @@ body {
   border-radius: 30px 30px 0 0;
 }
 
+.search__block-pic{
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+
 .reviews__block-content {
   padding: 40px 54px 75px 54px;
 }
@@ -916,6 +1000,13 @@ body {
   left: 0;
 }
 
+.search-details{
+  position: absolute;
+  z-index: 100;
+  top: 15%;
+  left: 0;
+}
+
 .details-favorite {
   cursor: pointer;
   position: absolute;
@@ -928,10 +1019,21 @@ body {
   transition: all 0.3s;
 }
 
+.search-favorite{
+  padding: 11px 13px 11px 13px;
+  left: 230px;
+  top: -30%;
+}
+
+.reviews__block-img{
+width: 100%;
+}
+
 .details-favorite:hover {
   background: #FFF2EF;
   border: 1px solid #EB6345;
 }
+
 
 .details-favorite:active .details-img {
   fill: #EB6345;
@@ -1355,4 +1457,34 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #5A2418;
+}
+
+
+/* Страница Каталог */
+
+.pages-path{
+  margin-bottom: 40px;
+}
+
+.pages-path__inner{
+  display: flex;
+  align-items: center;
+}
+
+.pages__this-page{
+  font-size: 18px;
+  line-height: 25px;
+  color: #141414;
+}
+
+.pages__path{
+  margin: 0 20px;
+}
+
+.pages__home{
+  transition: all 0.3s;
+}
+
+.pages__home:hover{
+  opacity: 0.7;
 }
