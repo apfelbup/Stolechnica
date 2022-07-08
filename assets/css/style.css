@@ -2070,11 +2070,11 @@ margin-bottom: 50px;
 
 
 .cart__result-items,
-.cart__ordering-items,
-.cart__item{
+.cart__item,
+.cart__ordering-items{
   padding: 45px;
-
 }
+
 
 .cart__item-content {
   display: flex;
@@ -2087,9 +2087,11 @@ margin-bottom: 50px;
   padding: 0 45px;
 }
 
+
 .cart__item:nth-child(1){
   padding-top: 45px;
 }
+
 
 .cart__item:nth-last-child(1){
   padding-top: 0px;
@@ -2404,12 +2406,14 @@ display: none;
   stroke: #5A2418;
 }
 
-.ordering-input:checked + label .payment-svg{
+.ordering-input:checked + .payment-svg svg{
   fill: #5A2418;
+  stroke: none;
 }
 
-.payment-svg{
+.payment-svg svg{
   transition: all 0.1s;
+  stroke: none;
   fill:#5B5B5B;
 }
 
@@ -2480,4 +2484,95 @@ display: none;
   margin-bottom: 0;
   font-size: 18px;
 line-height: 25px;
+}
+
+.ordering-right__about{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ordering-right__about p{
+  font-size: 26px;
+line-height: 36px;
+color: #141414;
+}
+
+.ordering__change{
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.ordering__change:hover{
+  opacity: 0.7;
+}
+
+.ordering__change p {
+  font-size: 18px;
+line-height: 25px;
+color: #EB6345;
+margin-right: 25px;
+}
+
+.ordering-right{
+  max-width: 625px;
+  width: 100%;
+}
+
+.ordering__amount{
+  font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #5B5B5B;
+}
+
+.ordering__item-price{
+  font-weight: 600;
+font-size: 22px;
+line-height: 30px;
+color: #5B5B5B;
+}
+
+.ordering__items{
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+
+
+.ordering__item + .ordering__item {
+  margin-top: 25px;
+}
+
+.ordering__costs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.ordering__costs p {
+font-size: 26px;
+line-height: 36px;
+color: #141414;
+}
+
+.ordering-submit{
+  width: 100%;
+  background: #EB6345;
+border-radius: 10px;
+color: #FFFFFF;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+padding: 18px 0;
+cursor: pointer;
+border: 1px solid #EB6345;
+transition: all 0.3s;
+}
+
+.ordering-submit:hover {
+  background: transparent;
+  color: #EB6345;
 }

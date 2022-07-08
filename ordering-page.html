@@ -65,6 +65,7 @@
 
     <section class="ordering">
         <div class="container">
+
             <h4 class="ordering-title">Оформление заказа</h4>
             <div class="ordering__sections">
                 <div class="ordering-left">
@@ -133,8 +134,8 @@
                         <div class="ordering__payment">
                             <div class="ordering__payment-block">
                                 <input type="radio" name="payment" class="ordering-input" id="payment1">
-                                <label class="ordering-label" for="payment1">
-                                    <svg class="payment-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                <label class="ordering-label payment-svg" for="payment1">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M16 17C11.589 17 8 13.411 8 9C8 4.589 11.589 1 16 1C20.411 1 24 4.589 24 9C24 13.411 20.411 17 16 17ZM16 3C12.691 3 10 5.691 10 9C10 12.309 12.691 15 16 15C19.309 15 22 12.309 22 9C22 5.691 19.309 3 16 3Z" />
@@ -169,9 +170,100 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="ordering-right"></div>
+
+                <div class="ordering-right">
+                    <div class="ordering-right__about">
+                        <p>Состав заказа</p>
+                        <a href="" class="ordering__change">
+                            <p>Изменить</p>
+                            <svg width="57" height="7" viewBox="0 0 57 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M57 3.5L52 0.613249V6.38675L57 3.5ZM0 4H52.5V3H0V4Z" fill="#EB6345" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="ordering__items">
+                        <div class="ordering__item">
+                            <div class="cart__item-content">
+                                <div class="cart__item-info">
+                                    <div class="cart__item-pic">
+                                        <div class="cart__search-details">
+                                            <!-- Разные состояния на карточке  товара: new, top, скидка -->
+                                            <p class="details-item details-discount">-35%</p>
+                                            <p class="details-item details-new">New</p>
+                                            <p class="details-item details-top">Top</p>
+                                        </div>
+                                        <img src="assets/img/product1.jpg" alt="">
+                                    </div>
+                                    <div class="cart__item-text"> <a href="#" class="cart__info-product">Стол 61</a>
+                                        <p class="cart__info-color">Цвет: белое дерево</p>
+                                        <p class="cart__info-size">Размер: 100х80 </p>
+                                    </div>
+
+                                </div>
+                                <div class="ordering__quantity">
+                                    <p class="ordering__amount">1 шт.</p>
+                                </div>
+                                <div class="cart__item-count">
+                                    <p class="ordering__item-price">10 000 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering__item">
+                            <div class="cart__item-content">
+
+                                <div class="cart__item-info">
+                                    <div class="cart__item-pic">
+
+                                        <img src="assets/img/cart-page/cart-slider3.jpg" alt="">
+                                    </div>
+                                    <div class="cart__item-text"> <a href="#" class="cart__info-product">Стол Турция
+                                            70</a>
+                                        <p class="cart__info-color">Цвет: белое дерево</p>
+                                        <p class="cart__info-size">Размер: 100х80 </p>
+                                    </div>
+                                </div>
+                                <div class="ordering__quantity">
+                                    <p class="ordering__amount">1 шт.</p>
+                                </div>
+                                <div class="cart__item-count">
+                                    <p class="ordering__item-price">14 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ordering__item">
+                            <div class="cart__item-content">
+                                <div class="cart__item-info">
+                                    <div class="cart__item-pic"><img src="assets/img/product1.jpg" alt=""></div>
+                                    <div class="cart__item-text"> <a href="#" class="cart__info-product">Стул Versachi
+                                        </a>
+                                        <p class="cart__info-color">Цвет: белое дерево</p>
+                                        <p class="cart__info-size">Размер: 100х80 </p>
+                                    </div>
+                                </div>
+                                <div class="ordering__quantity">
+                                    <p class="ordering__amount">1 шт.</p>
+                                </div>
+                                <div class="cart__item-count">
+                                    <p class="ordering__item-price">20 000 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ordering__result">
+                        <div class="ordering__costs">
+                            <p>Итого</p>
+                            <p>44 000 ₽</p>
+                        </div>
+                        <input class="ordering-submit" type="submit" value="Оформить заказ">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
