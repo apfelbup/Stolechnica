@@ -83,6 +83,11 @@
         </div>
         <div class="container">
             <div class="header__searching">
+                <a href="#" class="mobile__item mobile-nav">
+                    <span type="button" class="mobile-nav-button">
+                        <span class="mobile-nav-button__icon"></span>
+                    </span>
+                </a>
                 <div class="header__logo">
                     <a href="#" class="logo__link"><img src="assets/img/logo.svg" alt="Stolechnica"></a>
                 </div>
@@ -93,14 +98,43 @@
                 <div class="header__popup">
                     <a href="#popup" class="popup-check popup-link">Заказать звонок</a>
                 </div>
+                <div class="mobile__elements">
+                    <a href="#" class="mobile__element"><svg width="30" height="30" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z"
+                                stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.25 19.25L15.2625 15.2625" stroke="#141414" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="mobile__element"><svg width="30" height="26" viewBox="0 0 30 26" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.05 3.76249C25.4116 3.12375 24.6535 2.61705 23.8192 2.27135C22.9849 1.92565 22.0906 1.74771 21.1875 1.74771C20.2844 1.74771 19.3902 1.92565 18.5558 2.27135C17.7215 2.61705 16.9635 3.12375 16.325 3.76249L15 5.08749L13.675 3.76249C12.3854 2.47288 10.6363 1.74838 8.81253 1.74838C6.98874 1.74838 5.23964 2.47288 3.95003 3.76249C2.66041 5.05211 1.93591 6.8012 1.93591 8.62499C1.93591 10.4488 2.66041 12.1979 3.95003 13.4875L5.27503 14.8125L15 24.5375L24.725 14.8125L26.05 13.4875C26.6888 12.849 27.1955 12.091 27.5412 11.2567C27.8869 10.4224 28.0648 9.5281 28.0648 8.62499C28.0648 7.72188 27.8869 6.82762 27.5412 5.9933C27.1955 5.15897 26.6888 4.40094 26.05 3.76249V3.76249Z"
+                                stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                    <a href="" class="mobile__element">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.75 7.5H26.25" stroke="#141414" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
             </div>
 
             <div class="header__catalog">
                 <div class="catalog">
-                    <a href="#" class="catalog__item mobile-nav ">
-                        <sopan type="button" class="mobile-nav-button">
-                            <span class="mobile-nav-button__icon"></span>
-                        </sopan>
+                    <a href="#" class="catalog__item menu-nav ">
+                        <span type="button" class="menu-nav-button">
+                            <span class="menu-nav-button__icon"></span>
+                        </span>
                         <p href="" class="catalog__link">Каталог</p>
                     </a>
                     <a href="#products" class="catalog__item">Распродажа</a>
@@ -131,6 +165,20 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Неудачный результат поиска -->
+            <div class="modal-ajax-search" style="">
+                <div class="wrapper-ajax-search">
+                    <div class="ajax-search__not-found">
+                        <p class="ajax-search__undefined">По запросу <span>«Чехол»</span> ничего не найдено</p>
+                        <p class="ajax-search__details">Проверьте корректность введённых данных</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
     </header>
 
@@ -150,7 +198,6 @@
                     <div class="steps__info">
                         <p class="steps__step-page">Страница главная</p>
                     </div>
-
                     <img src="assets/img/steps/ordering2.jpg" alt="">
                 </div>
                 <div class="steps__block">
