@@ -1257,14 +1257,20 @@ width: 100%;
   color: #5A2418;
 }
 
+.footer__options,
 .footer__content,
 .footer__about {
   display: flex;
   justify-content: space-between;
 }
 
+.footer__options{
+  max-width: 900px;
+  width: 100%;
+}
+
 .footer__contacts {
-  margin-left: 130px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -3194,6 +3200,20 @@ margin-bottom: 50px;
   text-align: center;
   margin-bottom: 30px;
 }
+
+.footer__options{
+  flex-direction: column;
+  max-width: 325px;
+}
+
+.footer__options-content{
+  max-width: 233px;
+  margin-bottom: 60px;
+}
+
+.footer__block + .footer__block {
+  margin-left: 0px;
+}
 }
 
 @media(max-width:768px){
@@ -3283,6 +3303,24 @@ margin-bottom: 50px;
   .guarantee__ways-inner + .guarantee__ways-inner{
     margin-top: 15px;
   }
+
+
+  .popup {
+
+}
+  .popup__inner {
+    position: relative;
+    padding: 80px 24px 80px 24px;
+}
+
+
+.close {
+  position: absolute;
+  right: 40px;
+  top: 95px;
+}
+
+
 }
 
 @media(max-width:600px){
@@ -3546,6 +3584,23 @@ line-height: 27px;
 
 .guarantee {
   margin-bottom: 60px;
+}
+
+.form__submit{
+  max-width: 100%;
+ width: 100%;
+ font-size: 16px;
+line-height: 22px;
+}
+
+.popup__text {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.ordering-form, .form__name, .form__phone {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 }
