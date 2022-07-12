@@ -1320,6 +1320,12 @@ width: 100%;
   opacity: 0.6;
 }
 
+.footer__buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .footer__phone {
   font-size: 26px;
   line-height: 36px;
@@ -3305,9 +3311,6 @@ margin-bottom: 50px;
   }
 
 
-  .popup {
-
-}
   .popup__inner {
     position: relative;
     padding: 80px 24px 80px 24px;
@@ -3319,6 +3322,44 @@ margin-bottom: 50px;
   right: 40px;
   top: 95px;
 }
+
+}
+
+@media(max-width:710px){
+.footer__inner{
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__options-content {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer__options{
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__contacts{
+  margin-left: 0;
+  align-items: center;
+}
+
+.footer__phone {
+  margin-bottom: 15px;
+}
+
+.footer-wp{
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+
 
 
 }
@@ -3345,6 +3386,20 @@ margin-bottom: 50px;
 
   .consultation__title {
     font-size: 32px;
+}
+
+.footer-wp{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.favorite p,
+.cart p{
+  display: none;
+}
+
+.favorite {
+  margin-right: 25px;
 }
 
 
@@ -3471,6 +3526,9 @@ margin-bottom: 15px;
 .guarantee__ways-about {
   font-size: 20px;
 }
+
+
+
 
 }
 
@@ -3601,6 +3659,35 @@ line-height: 22px;
 .ordering-form, .form__name, .form__phone {
   font-size: 15px;
   line-height: 20px;
+}
+
+
+.footer__law {
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
+.privacy {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.footer__title {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.footer__link {
+  font-size: 15px;
+  line-height: 20px;
+}
+.footer__buttons{
+  width: 100%;
+  display: block;
+}
+.footer-wp{
+  text-align: center;
 }
 
 }
