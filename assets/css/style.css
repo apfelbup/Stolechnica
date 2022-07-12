@@ -638,7 +638,7 @@ body {
 
 .categories__img {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   margin-top: -31px;
   transition: all 0.3s;
@@ -2003,6 +2003,10 @@ color: #141414;
   max-width: 1062px;
 }
 
+.mobile__text{
+  display: none;
+}
+
 
 
 /* ====guarantee==== */
@@ -3124,6 +3128,78 @@ margin-bottom: 50px;
 
 
 
+.categories__blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (350px)[6];
+  grid-template-rows: repeat(3, 350px);
+  grid-gap: 15px;
+}
+
+
+.categories__block:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+
+.categories__block:nth-child(2) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 7/13;
+}
+
+.categories__block:nth-child(3) {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 1/13;
+  grid-row: 2/3;
+}
+
+.categories__block:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/13;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.categories__block:nth-child(5) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 6/13;
+  -ms-grid-row: 3;
+  -ms-grid-row-span:1;
+  grid-row: 3/4;
+}
+
+.categories__block:nth-child(6) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  grid-row: 4/5;
+}
+
+.categories__block:nth-child(7) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 3;
+  grid-row: 4/5;
+}
+
+.categories__block:nth-child(8) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span:1;
+  grid-row: 3/4;
+}
+
 .sales__title{
   max-width: 220px;
   margin-bottom: 30px;
@@ -3227,77 +3303,6 @@ margin-bottom: 50px;
     height: 500px;
   }
 
-  .categories__blocks {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[12];
-    grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: (350px)[6];
-    grid-template-rows: repeat(3, 350px);
-    grid-gap: 15px;
-  }
-  
-  
-  .categories__block:nth-child(1) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-  }
-  
-  .categories__block:nth-child(2) {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-column: 7/13;
-  }
-  
-  .categories__block:nth-child(3) {
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 5;
-    grid-column: 1/13;
-    grid-row: 2/3;
-  }
-  
-  .categories__block:nth-child(4) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column: 1/13;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 5/6;
-  }
-  
-  .categories__block:nth-child(5) {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
-    grid-column: 6/13;
-    -ms-grid-row: 3;
-    -ms-grid-row-span:1;
-    grid-row: 3/4;
-  }
-  
-  .categories__block:nth-child(6) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    grid-row: 4/5;
-  }
-  
-  .categories__block:nth-child(7) {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
-    grid-column: 7/13;
-    -ms-grid-row: 3;
-    grid-row: 4/5;
-  }
-  
-  .categories__block:nth-child(8) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1/6;
-    -ms-grid-row: 3;
-    -ms-grid-row-span:1;
-    grid-row: 3/4;
-  }
 
   .guarantee__ways-title{
     margin-bottom: 15px;
@@ -3321,6 +3326,34 @@ margin-bottom: 50px;
   position: absolute;
   right: 40px;
   top: 95px;
+}
+
+
+.refund__title {
+  margin-bottom: 30px;
+  padding-left: 0px;
+}
+
+.refund__checking-inner {
+  padding: 35px 25px;
+}
+
+.refund__checking {
+  margin-bottom: 30px;
+}
+
+.refund__ways {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+
+.mobile__text{
+  display: flex;
+  margin-bottom: 120px;
+  font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+color: #EB6345;
 }
 
 }
@@ -3528,7 +3561,9 @@ margin-bottom: 15px;
 }
 
 
-
+.refund__checking-text+.refund__checking-text {
+  margin-top: 10px;
+}
 
 }
 
@@ -3690,4 +3725,52 @@ line-height: 22px;
   text-align: center;
 }
 
+
+.refund__title {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.refund__checking-inner {
+  padding: 20px 24px;
+}
+
+.refund__checking-title{
+font-size: 15px;
+line-height: 20px;
+margin-bottom: 10px;
+}
+.refund__checking-text+.refund__checking-text {
+  margin-top: 0px;
+}
+
+.refund__checking-text{
+  font-size: 12px;
+line-height: 16px;
+}
+
+.refund__checking {
+  margin-bottom: 20px;
+}
+
+.refund__ways-title {
+  font-size: 15px;
+  line-height: 20px;  
+  margin-bottom: 10px;
+}
+
+.refund__ways-text + .refund__ways-text {
+  margin-top: 0px;
+}
+
+.refund__ways-text{
+  font-size: 12px;
+line-height: 16px;
+}
+
+.mobile__text {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 20px;
+}
 }
