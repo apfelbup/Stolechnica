@@ -39,7 +39,8 @@ body {
 }
 
 
-
+.sections,
+.products__categories,
 .container {
   max-width: 1300px;
   padding: 0 10px;
@@ -690,7 +691,7 @@ transition: all 0.3s;
   justify-content: space-between;
   border-bottom: 1px solid #BDBDBD;
   padding-bottom: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .products__categories-btn {
@@ -836,7 +837,7 @@ transition: all 0.3s;
 }
 
 .products {
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 .sections {
@@ -853,7 +854,7 @@ transition: all 0.3s;
   font-size: 22px;
   line-height: 30px;
   color: #141414;
-  padding: 15px 40px;
+  padding: 10px 25px;
   border-radius: 12px;
   background: #F5F5F5;
   transition: all 0.3s;
@@ -1074,14 +1075,13 @@ opacity: 0;
 }
 
 .reviews {
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 .reviews__title {
   font-size: 38px;
   line-height: 52px;
   color: #141414;
-  margin-bottom: 50px;
 }
 
 .reviews__block {
@@ -1145,12 +1145,12 @@ opacity: 0;
   max-width: 100%;
 }
 
+.reviews__blocks .slick-list,
 .products__blocks  .slick-list{
   position: relative;
   padding: 50px 40px;
   max-width: 1400px;
   width: 105%;
-  height: 630px;
   right: 40px;
 
 }
@@ -1193,28 +1193,18 @@ opacity: 0;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.18);
 }
 
+.prev,
 .products__prev{
   left: -90px;
-  top: 410px;
+  top: 300px;
 }
 
 
 
-
-.prev {
-  left: -90px;
-  top: 250px;
-}
-
-
-.next{
-  left: 102.5%;
-  top: 250px;
-}
-
+.next,
 .products__next{
   left: 102.5%;
-  top: 410px;
+  top: 300px;
 }
 
 .details {
@@ -3208,32 +3198,21 @@ margin-bottom: 50px;
 /* ====================== */
 /* ======Адаптив========= */
       @media(max-width:1550px){
-        .prev{
-          left: -35px;
-          padding: 0;
-          box-shadow:none;
-          border:none;
-          top: 270px;
-        }
+
+        .prev,
         .products__prev{
-          top: 431px;
+          top: 320px;
           left: -35px;
           padding: 0;
           box-shadow:none;
           border:none;
         }
-        .next{
-          padding: 0;
-          box-shadow:none;
-          border:none;
-          left: 101%;
-          top: 270px;
-        }
+        .next,
         .products__next {
           padding: 0;
           box-shadow:none;
           border:none;
-          top: 431px;
+          top: 320px;
 
         }
 
@@ -3435,7 +3414,7 @@ line-height: 16px;
     display: none;
   }
   .pages-path__inner,
-.products__categories,
+.catalog__categories,
 .catalog__block-left{
   display: none;
 }
@@ -3473,10 +3452,29 @@ cursor: pointer;
 .block-right__filter p {
   margin-right: 10px;
 }
+
+.reviews__title {
+text-align: center;
+}
 }
 
 
 @media(max-width:1024px){
+  .products__categories{
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .products__categories::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+  .products__categories-btn + .products__categories-btn{
+    margin-left: 105px;
+  }
   .menu__link + .menu__link {
     margin-left: 20px;
 }
@@ -3979,6 +3977,22 @@ color: #EB6345;
   margin-left: 40px;
 }
 
+.sections{
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.sections-block + .sections-block {
+  margin-left: 60px;
+}
+
+.sections::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+
 }
 
 @media(max-width:600px){
@@ -4260,6 +4274,32 @@ margin-bottom: 16px;
   font-size: 15px;
   line-height: 20px;
 }
+
+.reviews__block-content {
+  padding: 5px 20px 35px 20px;
+}
+
+.reviews__blocks .slick-slide {
+  min-height: 394px;
+}
+
+.reviews__city{
+  font-size: 15px;
+line-height: 20px;
+margin-bottom: 5px;
+}
+
+.reviews__name{
+  font-size: 15px;
+line-height: 20px;
+margin-bottom: 10px;
+}
+
+.reviews__text{
+  font-size: 12px;
+line-height: 16px;
+}
+
 
 }
 
@@ -4623,6 +4663,24 @@ margin-bottom: 10px;
   font-size: 14px;
   line-height: 19px;
   color: #5B5B5B;
+}
+
+.products__categories-btn {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.sections-block + .sections-block {
+  margin-left: 25px;
+}
+
+.reviews__title {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.reviews__blocks .slick-list, .products__blocks .slick-list {
+  padding: 25px 15px;
 }
 
 }
