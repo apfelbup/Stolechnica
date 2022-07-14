@@ -194,16 +194,19 @@
 
     <!-- Галерея товара -->
     <section class="slider">
-        <div class="container">
+        <div class="slider__container">
+            <div class="swiper-info">
+                <p>Стол 61</p> <button class="swiper-close"><img src="assets/img/popup-close.svg" alt="close"></button>
+            </div>
             <div class="slider__flex">
                 <div class="slider__col">
 
-                    <div class="slider__prev">Prev</div>
 
                     <div class="slider__thumbs">
                         <div class="swiper-container">
+
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide ">
                                     <div class="slider__image"><img src="assets/img/product-page/product-img1.jpg"
                                             alt="" />
                                     </div>
@@ -223,50 +226,86 @@
                                             alt="" />
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="assets/img/product-page/product-img5.jpg"
-                                            alt="" />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="slider__next">Next</div>
 
                 </div>
 
                 <div class="slider__images">
                     <div class="swiper-container">
+                        <div class="slider__prev"><img src="assets/img/arr-before.svg" alt=""></div>
                         <!-- Слайдер с изображениями -->
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-big">
                                 <div class="slider__image"><img src="assets/img/product-page/product-img1.jpg" alt="" />
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-big">
                                 <div class="slider__image"><img src="assets/img/product-page/product-img2.jpg" alt="" />
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-big">
                                 <div class="slider__image"><img src="assets/img/product-page/product-img3.jpg" alt="" />
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-big">
                                 <div class="slider__image"><img src="assets/img/product-page/product-img4.jpg" alt="" />
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slider__image"><img src="assets/img/product-page/product-img5.jpg" alt="" />
-                                </div>
-                            </div>
                         </div>
+                        <div class="slider__next"><img src="assets/img/arr-next.svg" alt=""></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
+            // задаем параметры
+            slidesPerView: 'auto',
+            direction: 'vertical', // вертикальная прокрутка
+            slidesPerView: 3, // показывать по 3 превью
+            spaceBetween: 30, // расстояние между слайдами
+            freeMode: true, // при перетаскивании превью ведет себя как при скролле
+            breakpoints: { // условия для разных размеров окна браузера
+                0: { // при 0px и выше
+                    direction: 'horizontal', // горизонтальная прокрутка
+                },
+                768: { // при 768px и выше
+                    direction: 'vertical', // вертикальная прокрутка
+                }
+            }
+        });
+        // Инициализация слайдера изображений
+        const sliderImages = new Swiper('.slider__images .swiper-container', { // ищем слайдер превью по селектору
+            // задаем параметры
+            slidesPerView: 'auto',
+            direction: 'vertical', // вертикальная прокрутка
+            slidesPerView: 1, // показывать по 1 изображению
+            spaceBetween: 32, // расстояние между слайдами
+            mousewheel: true, // можно прокручивать изображения колёсиком мыши
+            navigation: { // задаем кнопки навигации
+                nextEl: '.slider__next', // кнопка Next
+                prevEl: '.slider__prev' // кнопка Prev
+            },
+            grabCursor: true, // менять иконку курсора
+            thumbs: { // указываем на превью слайдер
+                swiper: sliderThumbs // указываем имя превью слайдера
+            },
+            breakpoints: { // условия для разных размеров окна браузера
+                0: { // при 0px и выше
+                    direction: 'horizontal', // горизонтальная прокрутка
+                },
+                768: { // при 768px и выше
+                    direction: 'vertical', // вертикальная прокрутка
+                }
+            }
+        });
+    </script>
 
 
 
@@ -1117,6 +1156,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="assets/js/jquery-3.6.0.min.js?_v=20220704212243"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?_v=20220704212243"
