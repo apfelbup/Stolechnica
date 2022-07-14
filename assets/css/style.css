@@ -1137,13 +1137,25 @@ transition: all 0.3s;
   min-height: 580px;
 }
 
+.products__blocks{
+  max-width: 100%;
+}
+
 .products__blocks  .slick-list{
   position: relative;
   padding: 50px 40px;
-  width: 1400px;
+  max-width: 1400px;
+  width: 110%;
   height: 630px;
   right: 40px;
 
+}
+
+.product__block,
+.reviews__blocks .slick-slide, .products__blocks .slick-slide {
+  margin: 0 15px;
+  max-width:407px;
+  width: 100%;
 }
 
 .slick-active {
@@ -1180,6 +1192,8 @@ transition: all 0.3s;
   left: -90px;
   top: 410px;
 }
+
+
 
 
 .prev {
