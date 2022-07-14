@@ -2526,6 +2526,10 @@ margin-bottom: 30px;
   justify-content: space-between;
 }
 
+.cart-block .slick-slide{
+  margin: 0 15px;
+}
+
 .slider__text{
   font-size: 38px;
 line-height: 52px;
