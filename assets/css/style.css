@@ -3434,11 +3434,13 @@ margin-bottom: 50px;
   align-items: center;
 }
 
+.recommendations__items .slick-slide {margin: 0 10px;} 
 
+.product__block-search,
 .product__block-catalog,
 .product__block-search {
   max-width: 720px;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
 }
 
