@@ -3240,6 +3240,36 @@ border-radius: 0px 4px 4px 0px;
   display: none;
 }
 
+
+.success__ordering-info{
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.success__ordering-about{
+  display: flex;
+  font-size: 38px;
+line-height: 52px;
+text-align: center;
+color: #EB6345;
+justify-content: center;
+margin-bottom: 15px;
+}
+
+.success__ordering-text{
+  max-width: 600px;
+  font-size: 22px;
+line-height: 30px;
+text-align: center;
+color: #141414;
+margin: 0 auto;
+}
+
+.success__ordering-about p{
+  margin-left: 20px;
+}
+
+
 .product__ordering-item + .product__ordering-item{
   margin-top: 10px;
 }
