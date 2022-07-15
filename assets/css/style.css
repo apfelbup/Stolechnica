@@ -3294,6 +3294,10 @@ border-radius: 0px 4px 4px 0px;
   text-align: center;
 }
 
+.success__ordering{
+  margin-bottom: 120px;
+}
+
 .success__ordering-about{
   display: flex;
   font-size: 38px;
