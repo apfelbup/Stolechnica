@@ -3963,6 +3963,7 @@ text-align: center;
   .product__buy-mobile{
     display: flex;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
   .product__buy-now{
     margin-left: 30px;
@@ -4693,6 +4694,20 @@ margin-bottom: 0;
 
 
 @media(max-width:600px){
+
+  .product__buy-mobile{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .product__buy-now{
+    margin-left: 0px;
+  }
+
+  .product {
+    margin-bottom: 60px;
+}
 
   .pages-path__mobile p{
     font-size: 15px;
