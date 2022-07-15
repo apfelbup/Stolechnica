@@ -691,12 +691,17 @@ transition: all 0.3s;
   margin-bottom: 50px;
 }
 
+.catalog__categories,
 .products__categories {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #BDBDBD;
   padding-bottom: 15px;
   margin-bottom: 20px;
+}
+
+.catalog__categories{
+  margin-bottom: 40px;
 }
 
 .products__categories-btn {
@@ -4695,6 +4700,15 @@ margin-bottom: 0;
 
 @media(max-width:600px){
 
+  .footer-cart p{
+    display: none;
+  }
+  
+  .reviews__blocks .slick-list, .products__blocks .slick-list {
+    position: relative;
+    padding: 22px 15px;
+}
+
   .product__buy-mobile{
     display: flex;
     flex-direction: column;
@@ -5216,6 +5230,17 @@ line-height: 20px;
 
 
 @media(max-width:520px){
+
+  .reviews__title {
+    font-size: 20px;
+    line-height: 27px;
+}
+  .categories__title {
+    font-size: 20px;
+    line-height: 27px;
+    
+    margin-bottom: 30px;
+}
   .product__items .slick-active button {
     bottom: 42%;
     right: 5%;
@@ -5813,6 +5838,16 @@ line-height: 27px;
   line-height: 16px;
 }
 
+.consultation__pic {
+  padding-left: 0px;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+
+
 .guarantee__ways-title {
   font-size: 20px;
   line-height: 27px;
@@ -5939,6 +5974,8 @@ line-height: 16px;
 .favorite__title{
   text-align: left;
 }
+
+
 }
 
 @media(max-width:410px){
@@ -5971,6 +6008,18 @@ line-height: 16px;
     border-radius: 20px;
     overflow: hidden;
     height: 170px;
+}
+
+.reviews__blocks .slick-list, .products__blocks .slick-list {
+  margin: 0 auto;
+  right: 35px;
+}
+
+.reviews__blocks .slick-list, .products__blocks .slick-list {
+  width: 115%;
+}
+.reviews {
+  margin-bottom: 60px;
 }
 
 }
