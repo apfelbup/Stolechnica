@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Montserrat:wght@500;600&display=swap&_v=20220704212243"
         rel="stylesheet">
     <title>Главная</title>
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel=" stylesheet" href="assets/css/style.css">
@@ -166,9 +167,16 @@
                                 class="ordering-form ordering-form__phone" required="">
                             <input id="mail" type="mail" placeholder="Почта" name="mail"
                                 class="ordering-form ordering-form__mail" required="">
-                            <input id="city" type="text" placeholder="Город для доставки" name="city"
-                                class="ordering-form ordering-form__city" required="">
+                            <p class="form-city">*Самовывоз доступен не для всех городов</p>
+                            <select id="city" class="city-select">
+                                <option value="1"></option>
+                                <option value="2">Москва</option>
+                                <option value="3">Санкт-Петербург</option>
+                                <option value="4">Вязьма</option>
+                                <option value="5">Казань</option>
+                            </select>
                         </form>
+
                     </div>
                     <div class="ordering__step-thee">
                         <p class="ordering__text"> <span>3</span>Способ оплаты</p>
@@ -384,7 +392,7 @@
                                 </svg>
                                 <p>Избранное</p>
                             </a>
-                            <a href="" class="cart">
+                            <a href="" class="cart footer-cart">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -408,10 +416,24 @@
     </footer>
 
     <script src="assets/js/jquery-3.6.0.min.js?_v=20220704212243"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js?_v=20220704212243"
         type="text/javascript"></script>
     <script src="assets/js/slick.min.js?_v=20220704212243"></script>
+
     <script src="assets/js/app.min.js?_v=20220704212243"></script>
+    <script>
+        $(document).ready(function () {
+            $(".city-select").select2({
+                placeholder: {
+                    id: '1', // the value of the option
+                    text: 'Выберите город'
+                },
+                allowClear: true,
+                minimumResultsForSearch: -1,
+            });
+        });
+    </script>
 </body>
 
 </html>
